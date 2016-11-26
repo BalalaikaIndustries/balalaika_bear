@@ -27,6 +27,10 @@ defmodule BalalaikaBear.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    []
+    [
+      {:httpoison, "~> 0.10.0"},
+      {:credo, "~> 0.5", only: [:dev, :test]},
+      {:mock, "~> 0.2.0", only: :test}
+    ]
   end
 end

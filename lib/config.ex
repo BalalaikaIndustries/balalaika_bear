@@ -7,6 +7,10 @@ defmodule BalalaikaBear.Config do
     env_var!(:app_id)
   end
 
+  def code_redirect_uri do
+    env_var!(:code_redirect_uri)
+  end
+
   defp env_var!(var) do
     Application.fetch_env!(:balalaika_bear, var)
   end
