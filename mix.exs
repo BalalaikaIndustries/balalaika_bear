@@ -29,6 +29,7 @@ defmodule BalalaikaBear.Mixfile do
   defp deps do
     [
       {:httpoison, "~> 0.10.0"},
+      {:poison, "~> 3.0"},
       {:credo, "~> 0.5", only: [:dev, :test]},
       {:mock, "~> 0.2.0", only: :test},
       {:exvcr, "~> 0.7", only: :test}

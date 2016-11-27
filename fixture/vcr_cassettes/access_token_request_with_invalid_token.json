@@ -1,0 +1,28 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": [],
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://oauth.vk.com/access_token?redirect_uri=https://vk-callbacks.herokuapp.com/callbacks/auth&code=invalid_code&client_secret=Ue37mwEbTkBruPUl8NZs&client_id=5748390"
+    },
+    "response": {
+      "body": "{\"error\":\"invalid_grant\",\"error_description\":\"Code is invalid or expired.\"}",
+      "headers": {
+        "Server": "Apache",
+        "Date": "Sun, 27 Nov 2016 06:59:21 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Length": "75",
+        "Connection": "keep-alive",
+        "X-Powered-By": "PHP/3.7808",
+        "Set-Cookie": "remixlang=0; expires=Sat, 18 Nov 2017 09:53:35 GMT; path=/; domain=.vk.com",
+        "Pragma": "no-cache",
+        "Cache-control": "no-store"
+      },
+      "status_code": 401,
+      "type": "ok"
+    }
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": [],
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://oauth.vk.com/access_token?redirect_uri=https://vk-callbacks.herokuapp.com/callbacks/auth&code=f0eb1cf0c85d6ff5ae&client_secret=Ue37mwEbTkBruPUl8NZs&client_id=5748390"
+    },
+    "response": {
+      "body": "{\"access_token\":\"1ef5f0316a9734b0ac1ae3a5e8e2f22d231d2e1af883d8207b148a9377869ae0fd52cedb1bf040f5c5bf7\",\"expires_in\":86198,\"user_id\":397515497}",
+      "headers": {
+        "Server": "Apache",
+        "Date": "Sun, 27 Nov 2016 07:11:18 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Length": "143",
+        "Connection": "keep-alive",
+        "X-Powered-By": "PHP/3.7808",
+        "Set-Cookie": "remixlang=0; expires=Mon, 27 Nov 2017 05:47:49 GMT; path=/; domain=.vk.com",
+        "Pragma": "no-cache",
+        "Cache-control": "no-store"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

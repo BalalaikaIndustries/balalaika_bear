@@ -12,8 +12,11 @@ defmodule BalalaikaBear.Auth do
       code: code,
       client_secret: Config.api_key
     }
-
     url = request_url("access_token", params)
-    Request.request(:get, url)
+
+    case Request.request(:get, url) do
+      %{status_code: 200, body: body} -> {:ok, Poison.decode! body}
+      %{status_code: code, body: body} -> {:error, {code, Poison.decode! body}}
+    end
   end
 end
