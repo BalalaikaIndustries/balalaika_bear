@@ -25,8 +25,8 @@ defmodule BalalaikaBear.AuthTest do
   end
 
   defp correct_url do
-    "https://oauth.vk.com/authorize?" <>
-      "client_id=555&redirect_url=http://example.com/callback&" <>
-      "display=page&response=code&scope=friends&v=5.60&"
+    "https://oauth.vk.com/authorize?v=5.60&" <>
+    "scope=friends&response=code&display=page&" <>
+    "redirect_uri=http://example.com/callback&client_id=555"
   end
 end
