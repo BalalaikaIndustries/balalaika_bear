@@ -13,4 +13,16 @@ defmodule BalalaikaBear.MessagesTest do
       } = result
     end
   end
+
+  test "sends get_long_poll_server request with wrong token" do
+    use_cassette "unsuccessful_get_long_poll_server" do
+      token = "invalid_token"
+      {:error, description} = BalalaikaBear.Messages.get_long_poll_server(token)
+      %{
+        "error_code" => _,
+        "error_msg" => _,
+        "request_params" => _
+      } = description
+    end
+  end
 end
