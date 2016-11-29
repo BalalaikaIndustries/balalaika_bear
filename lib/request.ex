@@ -1,6 +1,6 @@
 defmodule BalalaikaBear.Request do
+  alias BalalaikaBear.Utils
   @base_url "https://api.vk.com/method/"
-  alias BalalaikaBear.Config
 
   def request(type, url, headers \\ %{}, body \\ []) do
     {:ok, %HTTPoison.Response{
@@ -9,7 +9,7 @@ defmodule BalalaikaBear.Request do
       headers: headers}} =
     HTTPoison.request(type, url, body, headers)
 
-    %{status_code: code, body: body, headers: headers}
+    %{status_code: code, body: body, headers: headers} |> response
   end
 
   def request_with_params(type, method, params, headers \\ %{}, body \\ []) do
@@ -18,14 +18,24 @@ defmodule BalalaikaBear.Request do
   end
 
   defp request_url(method, params) do
-    url_params =
-      %{
-        "access_token" => Config.api_key
-      }
-      |> Map.merge(params)
-      |> Enum.reduce([], fn({key, value}, accum) -> ["#{key}=#{value}" | accum] end)
-      |> Enum.join("&")
+    @base_url <> "#{method}?" <> Utils.url_params(%{}, params)
+  end
 
-    @base_url <> "#{method}?" <> url_params
+  defp response(%{status_code: code, body: body, headers: _}) do
+    case code do
+      200 -> parse_result(body)
+        _ -> {:error, Poison.decode! body}
+    end
+  end
+
+  defp parse_result(body) do
+    body = Poison.decode! body
+    case body do
+      %{"response" => response_map} ->
+        {:ok, response_map}
+      %{"error" => error_map} ->
+        {:error, error_map}
+      _ -> {:ok, body}
+    end
   end
 end

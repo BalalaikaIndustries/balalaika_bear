@@ -1,5 +1,5 @@
 defmodule BalalaikaBear.AuthTest do
-  use ExUnit.Case, async: true
+  use ExUnit.Case
   use ExVCR.Mock, adapter: ExVCR.Adapter.Hackney
   import Mock
   alias BalalaikaBear.Auth
@@ -20,12 +20,9 @@ defmodule BalalaikaBear.AuthTest do
     use_cassette "access_token_request_with_invalid_token" do
       code = "invalid_code"
       {:error, description} = Auth.access_token(code)
-      {
-        401,
-        %{
-          "error" => "invalid_grant",
-          "error_description" => "Code is invalid or expired."
-        }
+      %{
+        "error" => "invalid_grant",
+        "error_description" => "Code is invalid or expired."
       } = description
     end
   end

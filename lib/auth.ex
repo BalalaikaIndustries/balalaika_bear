@@ -1,7 +1,8 @@
 defmodule BalalaikaBear.Auth do
   alias BalalaikaBear.Config
   alias BalalaikaBear.Request
-  import BalalaikaBear.Auth.Utils
+  alias BalalaikaBear.Utils
+  @base_auth_url "https://oauth.vk.com/"
 
   def auth_url(params) do
     auth_request_url("authorize", params)
@@ -14,9 +15,17 @@ defmodule BalalaikaBear.Auth do
     }
     url = auth_request_url("access_token", params)
 
-    case Request.request(:get, url) do
-      %{status_code: 200, body: body} -> {:ok, Poison.decode! body}
-      %{status_code: code, body: body} -> {:error, {code, Poison.decode! body}}
-    end
+    Request.request(:get, url)
+  end
+
+  defp auth_request_url(path, params) do
+    @base_auth_url <> "#{path}?" <> Utils.url_params(default_auth_params, params)
+  end
+
+  defp default_auth_params do
+    %{
+      client_id: Config.app_id,
+      redirect_uri: Config.code_redirect_uri
+    }
   end
 end

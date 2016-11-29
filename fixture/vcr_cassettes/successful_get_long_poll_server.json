@@ -1,0 +1,28 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": [],
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.vk.com/method/messages.getLongPollServer?access_token=90f5483c654a53812f7430c69398b4b14b95dc6b716d86e01278e0fc36af08471ef9e5bfb2c1f01caf1b5"
+    },
+    "response": {
+      "body": "{\"response\":{\"key\":\"1d517e4a9731bc289f04baaee39270fc6f6611d3\",\"server\":\"imv4.vk.com\\/im3497\",\"ts\":1748198407}}",
+      "headers": {
+        "Server": "Apache",
+        "Date": "Tue, 29 Nov 2016 19:22:52 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Length": "110",
+        "Connection": "keep-alive",
+        "X-Powered-By": "PHP/3.7927",
+        "Set-Cookie": "remixlang=0; expires=Mon, 27 Nov 2017 16:26:54 GMT; path=/; domain=.vk.com",
+        "Pragma": "no-cache",
+        "Cache-control": "no-store"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]
