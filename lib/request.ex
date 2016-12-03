@@ -2,12 +2,12 @@ defmodule BalalaikaBear.Request do
   alias BalalaikaBear.Utils
   @base_url "https://api.vk.com/method/"
 
-  def request(type, url, headers \\ %{}, body \\ []) do
+  def request(type, url, headers \\ %{}, body \\ [], options \\ []) do
     {:ok, %HTTPoison.Response{
       status_code: code,
       body: body,
       headers: headers}} =
-    HTTPoison.request(type, url, body, headers)
+    HTTPoison.request(type, url, body, headers, options)
 
     %{status_code: code, body: body, headers: headers} |> response
   end
