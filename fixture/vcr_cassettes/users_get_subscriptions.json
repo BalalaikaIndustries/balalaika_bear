@@ -1,0 +1,28 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": [],
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.vk.com/method/users.getSubscriptions?user_id=13886710"
+    },
+    "response": {
+      "body": "{\"response\":{\"users\":{\"count\":2,\"items\":[129244038,338446678]},\"groups\":{\"count\":43,\"items\":[76982440,38624893,1672730,17568841,133749076,20629724,1980,27168444,43517580,25336774,49564905,50983956,40876092,11283947,109389299,77057079,60028089,4100014,44897339,54530371,31513532,74779558,36618087,36887378,42690072,61615047,69839157,24253566,58316960,78451064,31016078,23735676,25435524,46926970,48356568,49578442,52257624,58267631,58311505,68408490,87121676,88539805,89170621]}}}",
+      "headers": {
+        "Server": "Apache",
+        "Date": "Sun, 01 Jan 2017 21:03:05 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Length": "479",
+        "Connection": "keep-alive",
+        "X-Powered-By": "PHP/3.9306",
+        "Set-Cookie": "remixlang=0; expires=Wed, 03 Jan 2018 00:06:42 GMT; path=/; domain=.vk.com",
+        "Pragma": "no-cache",
+        "Cache-control": "no-store"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

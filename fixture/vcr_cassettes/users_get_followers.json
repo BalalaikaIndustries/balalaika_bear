@@ -1,0 +1,28 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": [],
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.vk.com/method/users.getFollowers?user_id=13886710&offset=5"
+    },
+    "response": {
+      "body": "{\"response\":{\"count\":30,\"items\":[346659919,309268182,319087410,331877450,319242113,249337600,311592136,219861531,243604675,150730703,226756268,220714782,47624592,168344220,138019209,17463903,138939662,266230522,49291224,231370025,190023352,218629309,201559459,8263618,35593262]}}",
+      "headers": {
+        "Server": "Apache",
+        "Date": "Sun, 01 Jan 2017 20:55:56 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Length": "279",
+        "Connection": "keep-alive",
+        "X-Powered-By": "PHP/3.9306",
+        "Set-Cookie": "remixlang=0; expires=Wed, 27 Dec 2017 06:13:59 GMT; path=/; domain=.vk.com",
+        "Pragma": "no-cache",
+        "Cache-control": "no-store"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": [],
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.vk.com/method/users.isAppUser?user_id=13886710&access_token=27c4a2e59524fc677d41418bd59c046e6591ed8c2633ede8a0a6c04fbf792d6ba8468146a48b0a599bdfb"
+    },
+    "response": {
+      "body": "{\"response\":\"1\"}",
+      "headers": {
+        "Server": "Apache",
+        "Date": "Sun, 01 Jan 2017 21:08:35 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Length": "16",
+        "Connection": "keep-alive",
+        "X-Powered-By": "PHP/3.9306",
+        "Set-Cookie": "remixlang=0; expires=Tue, 26 Dec 2017 22:52:27 GMT; path=/; domain=.vk.com",
+        "Pragma": "no-cache",
+        "Cache-control": "no-store"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

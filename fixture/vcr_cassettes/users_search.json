@@ -1,0 +1,28 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": [],
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.vk.com/method/users.search?q=Ayrat%20Badykov&access_token=31a1853977980cff82e354d1d6b642dbebe4402fe07ec2eaa0fd0ac8f3fe1156965364a3bc927b8400533"
+    },
+    "response": {
+      "body": "{\"response\":[8,{\"uid\":191636279,\"first_name\":\"Айрат\",\"last_name\":\"Бадыков\"},{\"uid\":136361967,\"first_name\":\"Айрат\",\"last_name\":\"Бадыков\"},{\"uid\":13886710,\"first_name\":\"Айрат\",\"last_name\":\"Бадыков\"},{\"uid\":161852005,\"first_name\":\"Айрат\",\"last_name\":\"Бадыков\"},{\"uid\":72917396,\"first_name\":\"Айрат\",\"last_name\":\"Бадыков\"},{\"uid\":318641215,\"first_name\":\"Айрат\",\"last_name\":\"Бадыков\"},{\"uid\":230026505,\"first_name\":\"Айрат\",\"last_name\":\"Бадыков\"},{\"uid\":345018267,\"first_name\":\"Айрат\",\"last_name\":\"Бадыков\"}]}",
+      "headers": {
+        "Server": "Apache",
+        "Date": "Sun, 01 Jan 2017 21:43:21 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Length": "598",
+        "Connection": "keep-alive",
+        "X-Powered-By": "PHP/3.9306",
+        "Set-Cookie": "remixlang=0; expires=Mon, 08 Jan 2018 19:17:10 GMT; path=/; domain=.vk.com",
+        "Pragma": "no-cache",
+        "Cache-control": "no-store"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]
