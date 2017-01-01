@@ -6,18 +6,18 @@
       "method": "get",
       "options": [],
       "request_body": "",
-      "url": "https://api.vk.com/method/users.get?user_ids=13886710,13886715"
+      "url": "https://api.vk.com/method/users.get?user_ids=13886710&name_case=ins&fields=photo_max,sex"
     },
     "response": {
-      "body": "{\"response\":[{\"uid\":13886710,\"first_name\":\"Айрат\",\"last_name\":\"Бадыков\",\"hidden\":1},{\"uid\":13886715,\"first_name\":\"Александр\",\"last_name\":\"Долгодуш\"}]}",
+      "body": "{\"response\":[{\"uid\":13886710,\"first_name\":\"Айратом\",\"last_name\":\"Бадыковым\",\"sex\":2,\"photo_max\":\"https:\\/\\/pp.vk.me\\/c837131\\/v837131710\\/1240d\\/roPlCfnhZf4.jpg\",\"hidden\":1}]}",
       "headers": {
         "Server": "Apache",
-        "Date": "Sat, 03 Dec 2016 19:52:21 GMT",
+        "Date": "Sun, 01 Jan 2017 19:54:52 GMT",
         "Content-Type": "application/json; charset=utf-8",
-        "Content-Length": "179",
+        "Content-Length": "191",
         "Connection": "keep-alive",
-        "X-Powered-By": "PHP/3.8131",
-        "Set-Cookie": "remixlang=0; expires=Mon, 27 Nov 2017 18:05:41 GMT; path=/; domain=.vk.com",
+        "X-Powered-By": "PHP/3.9306",
+        "Set-Cookie": "remixlang=0; expires=Sun, 31 Dec 2017 01:28:57 GMT; path=/; domain=.vk.com",
         "Pragma": "no-cache",
         "Cache-control": "no-store"
       },
