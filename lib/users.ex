@@ -6,4 +6,10 @@ defmodule BalalaikaBear.Users do
 
     Request.request_with_params(:get, method, params)
   end
+
+  def get_nearby(params) do
+    method = "users.getNearby"
+
+    Request.request_with_params(:get, method, params)
+  end
 end

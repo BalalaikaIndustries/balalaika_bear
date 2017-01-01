@@ -12,12 +12,12 @@
       "body": "{\"response\":[{\"uid\":13886710,\"first_name\":\"Айратом\",\"last_name\":\"Бадыковым\",\"sex\":2,\"photo_max\":\"https:\\/\\/pp.vk.me\\/c837131\\/v837131710\\/1240d\\/roPlCfnhZf4.jpg\",\"hidden\":1}]}",
       "headers": {
         "Server": "Apache",
-        "Date": "Sun, 01 Jan 2017 19:54:52 GMT",
+        "Date": "Sun, 01 Jan 2017 20:30:13 GMT",
         "Content-Type": "application/json; charset=utf-8",
         "Content-Length": "191",
         "Connection": "keep-alive",
         "X-Powered-By": "PHP/3.9306",
-        "Set-Cookie": "remixlang=0; expires=Sun, 31 Dec 2017 01:28:57 GMT; path=/; domain=.vk.com",
+        "Set-Cookie": "remixlang=0; expires=Sat, 30 Dec 2017 07:19:16 GMT; path=/; domain=.vk.com",
         "Pragma": "no-cache",
         "Cache-control": "no-store"
       },
