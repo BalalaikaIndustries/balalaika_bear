@@ -1,4 +1,4 @@
-defmodule BalalaikaBear.AuthTest do
+defmodule BalalaikaBear.OAuthTest do
   use ExUnit.Case
   use ExVCR.Mock, adapter: ExVCR.Adapter.Hackney
   import Mock

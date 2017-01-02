@@ -1,0 +1,28 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": [],
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.vk.com/method/fave.getUsers?access_token=2603c67c4033fdb86b56522062a694049bd63f143451fd74fe007630209de5642c85c5838f244f35056c9"
+    },
+    "response": {
+      "body": "{\"response\":[0]}",
+      "headers": {
+        "Server": "Apache",
+        "Date": "Mon, 02 Jan 2017 21:10:38 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Length": "16",
+        "Connection": "keep-alive",
+        "X-Powered-By": "PHP/3.9314",
+        "Set-Cookie": "remixlang=0; expires=Sat, 13 Jan 2018 20:31:06 GMT; path=/; domain=.vk.com",
+        "Pragma": "no-cache",
+        "Cache-control": "no-store"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]
