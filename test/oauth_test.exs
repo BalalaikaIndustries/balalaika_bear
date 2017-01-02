@@ -2,7 +2,7 @@ defmodule BalalaikaBear.AuthTest do
   use ExUnit.Case
   use ExVCR.Mock, adapter: ExVCR.Adapter.Hackney
   import Mock
-  alias BalalaikaBear.Auth
+  alias BalalaikaBear.OAuth
 
   test "generates correct auth url" do
     with_mock BalalaikaBear.Config,
@@ -10,7 +10,7 @@ defmodule BalalaikaBear.AuthTest do
       app_id: fn -> "555" end,
       code_redirect_uri: fn -> "http://example.com/callback" end
     ] do
-      generated_url = Auth.auth_url(params)
+      generated_url = OAuth.auth_url(params)
 
       assert generated_url == correct_url
     end
@@ -19,7 +19,7 @@ defmodule BalalaikaBear.AuthTest do
   test "does not fetch access_token if invalid code is provided" do
     use_cassette "access_token_request_with_invalid_token" do
       code = "invalid_code"
-      {:error, description} = Auth.access_token(code)
+      {:error, description} = OAuth.access_token(code)
       %{
         "error" => "invalid_grant",
         "error_description" => "Code is invalid or expired."
@@ -37,7 +37,7 @@ defmodule BalalaikaBear.AuthTest do
           "expires_in" => _,
           "user_id" => _
         }
-      } = Auth.access_token(code)
+      } = OAuth.access_token(code)
     end
   end
 

@@ -1,4 +1,4 @@
-defmodule API do
+defmodule BalalaikaBear.API do
   alias BalalaikaBear.Request
 
   defmacro __using__(options) do
@@ -10,7 +10,7 @@ defmodule API do
       |> Enum.each(
         fn({method_name, formatted_name}) ->
           def unquote(formatted_name)(params) do 
-            Request.request_with_params(:get, "#{unquote(namespace)}.#{unquote(method_name)}", params)
+            Request.request_with_params("#{unquote(namespace)}.#{unquote(method_name)}", params)
           end
         end)
     end

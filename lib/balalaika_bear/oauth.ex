@@ -1,4 +1,4 @@
-defmodule BalalaikaBear.Auth do
+defmodule BalalaikaBear.OAuth do
   alias BalalaikaBear.Config
   alias BalalaikaBear.Request
   alias BalalaikaBear.Utils

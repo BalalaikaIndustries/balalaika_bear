@@ -2,6 +2,11 @@ defmodule BalalaikaBear.Request do
   alias BalalaikaBear.Utils
   @base_url "https://api.vk.com/method/"
 
+  def request_with_params(method, params, headers \\ %{}, body \\ []) do
+    url = request_url(method, params)
+    request(:get, url, headers, body)
+  end
+
   def request(type, url, headers \\ %{}, body \\ [], options \\ []) do
     {:ok, %HTTPoison.Response{
       status_code: code,
@@ -10,11 +15,6 @@ defmodule BalalaikaBear.Request do
     HTTPoison.request(type, url, body, headers, options)
 
     %{status_code: code, body: body, headers: headers} |> response
-  end
-
-  def request_with_params(type, method, params, headers \\ %{}, body \\ []) do
-    url = request_url(method, params)
-    request(type, url, headers, body)
   end
 
   defp request_url(method, params) do
