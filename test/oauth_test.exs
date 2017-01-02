@@ -2,10 +2,10 @@ defmodule BalalaikaBear.AuthTest do
   use ExUnit.Case
   use ExVCR.Mock, adapter: ExVCR.Adapter.Hackney
   import Mock
-  alias BalalaikaBear.OAuth
+  alias BalalaikaBear.Utils.OAuth
 
   test "generates correct auth url" do
-    with_mock BalalaikaBear.Config,
+    with_mock BalalaikaBear.Utils.Config,
     [
       app_id: fn -> "555" end,
       code_redirect_uri: fn -> "http://example.com/callback" end

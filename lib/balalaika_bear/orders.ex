@@ -1,4 +1,4 @@
 defmodule BalalaikaBear.Orders do
-  use BalalaikaBear.API, namespace: "orders",
-                         methods: ["changeState", "get", "getAmount", "getById"]
+  use BalalaikaBear.Macro.API, namespace: "orders",
+                               methods: ["changeState", "get", "getAmount", "getById"]
 end

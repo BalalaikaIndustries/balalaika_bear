@@ -1,4 +1,4 @@
 defmodule BalalaikaBear.Widgets do
-  use BalalaikaBear.API, namespace: "widgets",
-                         methods: ["getComments", "getPagess"]
+  use BalalaikaBear.Macro.API, namespace: "widgets",
+                               methods: ["getComments", "getPagess"]
 end

@@ -1,4 +1,4 @@
-defmodule BalalaikaBear.Config do
+defmodule BalalaikaBear.Utils.Config do
   def api_key do
     env_var!(:api_key)
   end

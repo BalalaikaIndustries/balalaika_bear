@@ -1,4 +1,4 @@
 defmodule BalalaikaBear.Search do
-  use BalalaikaBear.API, namespace: "search",
-                         methods: ["getHints"]
+  use BalalaikaBear.Macro.API, namespace: "search",
+                               methods: ["getHints"]
 end

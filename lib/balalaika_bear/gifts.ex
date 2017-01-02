@@ -1,4 +1,4 @@
 defmodule BalalaikaBear.Gifts do
-  use BalalaikaBear.API, namespace: "gifts",
-                         methods: ["get"]
+  use BalalaikaBear.Macro.API, namespace: "gifts",
+                               methods: ["get"]
 end

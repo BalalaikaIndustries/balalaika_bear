@@ -1,6 +1,6 @@
 defmodule BalalaikaBear.Database do
-  use BalalaikaBear.API, namespace: "database",
-                         methods: ["getChairs", "getCities", "getCitiesById", "getCountries", 
-                                   "getCountriesById", "getFaculties", "getRegions", "getSchoolClasses",
-                                   "getSchools", "getStreetsById", "getUniversities"]
+  use BalalaikaBear.Macro.API, namespace: "database",
+                               methods: ["getChairs", "getCities", "getCitiesById", "getCountries", 
+                                         "getCountriesById", "getFaculties", "getRegions", "getSchoolClasses",
+                                         "getSchools", "getStreetsById", "getUniversities"]
 end

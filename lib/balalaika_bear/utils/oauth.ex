@@ -1,7 +1,7 @@
-defmodule BalalaikaBear.OAuth do
-  alias BalalaikaBear.Config
-  alias BalalaikaBear.Request
-  alias BalalaikaBear.Params
+defmodule BalalaikaBear.Utils.OAuth do
+  alias BalalaikaBear.Utils.Config
+  alias BalalaikaBear.Request.HTTPClient
+  alias BalalaikaBear.Request.Params
   @base_auth_url "https://oauth.vk.com/"
 
   def auth_url(params) do
@@ -15,7 +15,7 @@ defmodule BalalaikaBear.OAuth do
     }
     url = auth_request_url("access_token", params)
 
-    Request.request(:get, url)
+    HTTPClient.request(:get, url)
   end
 
   defp auth_request_url(path, params) do

@@ -1,5 +1,5 @@
-defmodule BalalaikaBear.Request do
-  alias BalalaikaBear.Params
+defmodule BalalaikaBear.Request.HTTPClient do
+  alias BalalaikaBear.Request.Params
   @base_url "https://api.vk.com/method/"
 
   def request_with_params(method, params, headers \\ %{}, body \\ []) do
