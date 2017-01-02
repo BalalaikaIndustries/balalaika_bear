@@ -1,7 +1,7 @@
 defmodule BalalaikaBear.OAuth do
   alias BalalaikaBear.Config
   alias BalalaikaBear.Request
-  alias BalalaikaBear.Utils
+  alias BalalaikaBear.Params
   @base_auth_url "https://oauth.vk.com/"
 
   def auth_url(params) do
@@ -19,7 +19,7 @@ defmodule BalalaikaBear.OAuth do
   end
 
   defp auth_request_url(path, params) do
-    @base_auth_url <> "#{path}?" <> Utils.url_params(default_auth_params, params)
+    @base_auth_url <> "#{path}?" <> Params.url_params(default_auth_params, params)
   end
 
   defp default_auth_params do
