@@ -1,4 +1,4 @@
-defmodule BalalaikaBear.AccountTest do
+defmodule BalalaikaBear.AudioTest do
   use ExUnit.Case
   use ExVCR.Mock, adapter: ExVCR.Adapter.Hackney
 

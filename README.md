@@ -1,4 +1,4 @@
-![](http://i.imgur.com/yw1ONP1.png)
+![](http://i.imgur.com/ZFgKYJa.png)
 # BalalaikaBear
 
 BalalaikaBear - simple elixir wrapper for VK API
