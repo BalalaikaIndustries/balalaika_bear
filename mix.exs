@@ -10,6 +10,8 @@ defmodule BalalaikaBear.Mixfile do
      deps: deps(),
 
       # Docs
+     package: package(),
+     description: "VK API wrapper for Elixir",
      name: "BalalaikaBear",
      source_url: "https://github.com/ayrat555/balalaika_bear",
      docs: [logo: "/home/ayrat/Development/logo.png",
