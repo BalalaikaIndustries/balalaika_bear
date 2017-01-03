@@ -4,4 +4,5 @@ defmodule BalalaikaBear.Wall do
                                          "get", "getById", "getComments", "getReposts", "pin", "post",
                                          "reportComment", "reportPost", "repost", "restore", "restoreComment",
                                          "search", "unpin"]
+  @moduledoc false
 end

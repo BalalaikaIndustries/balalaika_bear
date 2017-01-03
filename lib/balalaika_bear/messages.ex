@@ -7,4 +7,5 @@ defmodule BalalaikaBear.Messages do
                                          "getLongPollServer", "isMessagesFromGroupAllowed", "markAsAnsweredDialog", 
                                          "markAsImportant", "markAsImportantDialog", "markAsRead", "removeChatUser", 
                                          "restore", "search", "searchDialogs", "send", "setActivity", "setChatPhoto"]
+  @moduledoc false
 end

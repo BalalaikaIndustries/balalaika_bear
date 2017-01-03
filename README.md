@@ -14,7 +14,7 @@ end
 ```
 ## Usage
 
-All VK api method groups have have corresponding modules. For example, Users method group corresponds to BalalaikaBear.Users module. All api methods take map with params and return tuple with {:ok, result} or {:error, result}, result is also map. 
+All VK api method groups have corresponding modules. For example, Users method group corresponds to BalalaikaBear.Users module. All api methods take map with params and return tuple with {:ok, result} or {:error, result}, result is also map. Method names are snakecased.
 
 Examples:
 
@@ -53,6 +53,44 @@ iex> BalalaikaBear.Apps.get(%{app_id: 5803246})
 
 ```
 More examples can be found in test files.
+
+## Available api modules
+
+* BalalaikaBear.Account
+* BalalaikaBear.Apps
+* BalalaikaBear.Audio
+* BalalaikaBear.Auth
+* BalalaikaBear.Board
+* BalalaikaBear.Database
+* BalalaikaBear.Docs
+* BalalaikaBear.Fave
+* BalalaikaBear.Friends
+* BalalaikaBear.Gifts
+* BalalaikaBear.Groups
+* BalalaikaBear.Leads
+* BalalaikaBear.Likes
+* BalalaikaBear.Market
+* BalalaikaBear.Messages
+* BalalaikaBear.Newsfeed
+* BalalaikaBear.Notes
+* BalalaikaBear.Notifications
+* BalalaikaBear.Orders
+* BalalaikaBear.Pages
+* BalalaikaBear.Photos
+* BalalaikaBear.Places
+* BalalaikaBear.Polls
+* BalalaikaBear.Search
+* BalalaikaBear.Secure
+* BalalaikaBear.Stats
+* BalalaikaBear.Status
+* BalalaikaBear.Storage
+* BalalaikaBear.Users
+* BalalaikaBear.Utils
+* BalalaikaBear.Video
+* BalalaikaBear.Wall
+* BalalaikaBear.Widgets
+
+Documentation for available methods can be found [here](https://vk.com/dev/methods)(russian) or [here](https://vk.com/pages?oid=-17680044&p=API_Method_Description)(english)
 
 ## Documentation
 

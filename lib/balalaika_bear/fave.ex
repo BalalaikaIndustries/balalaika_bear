@@ -4,4 +4,5 @@ defmodule BalalaikaBear.Fave do
                                          "getMarketItems", "getPhotos", "getPosts",
                                          "getUsers", "getVideos", "removeGroup", "removeLink", 
                                          "removeUser"]
+  @moduledoc false
 end

@@ -3,4 +3,5 @@ defmodule BalalaikaBear.Secure do
                                methods: ["addAppEvent", "checkToken", "getAppBalance", 
                                          "getSMSHistory", "getTransactionsHistory", "getUserLevel", 
                                          "sendNotification", "sendSMSNotification", "setCounter", "setUserLevel"]
+  @moduledoc false
 end

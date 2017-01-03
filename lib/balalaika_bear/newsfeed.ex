@@ -4,4 +4,5 @@ defmodule BalalaikaBear.Newsfeed do
                                          "getComments", "getLists", "getMentions", "getRecommended",
                                          "getSuggestedSources", "ignoreItem", "saveList", "search",
                                          "unignoreItem", "unsubscribe"]
+  @moduledoc false
 end

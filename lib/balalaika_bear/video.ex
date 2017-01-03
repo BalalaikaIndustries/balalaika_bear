@@ -6,4 +6,5 @@ defmodule BalalaikaBear.Video do
                                          "getNewTags", "getTags", "getUserVideos", "hideCatalogSection", "putTag",
                                          "removeFromAlbum", "removeTag", "reorderAlbums", "reorderVideos", "report",
                                          "reportComment", "restore", "restoreComment", "save", "search"]
+  @moduledoc false
 end
