@@ -1,4 +1,6 @@
 defmodule BalalaikaBear.Request.Params do
+  @moduledoc false
+
   def url_params(default_params, params) do
     params
     |> Map.merge(default_params)

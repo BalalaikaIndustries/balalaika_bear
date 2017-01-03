@@ -1,5 +1,6 @@
 defmodule BalalaikaBear.Macro.API do
   alias BalalaikaBear.Request.HTTPClient
+  @moduledoc false
 
   defmacro __using__(options) do
     method_names = for method_name <- options[:methods], do: {method_name, format_name(method_name)}

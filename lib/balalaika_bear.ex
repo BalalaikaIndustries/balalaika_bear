@@ -1,2 +1,0 @@
-defmodule BalalaikaBear do
-end
