@@ -92,7 +92,7 @@ More examples can be found in test files.
 
 Documentation for available methods can be found [here](https://vk.com/dev/methods)(russian) or [here](https://vk.com/pages?oid=-17680044&p=API_Method_Description)(english)
 
-## Documentation
+## Available api methods
 
 https://hexdocs.pm/balalaika_bear/api-reference.html
 

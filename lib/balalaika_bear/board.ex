@@ -3,5 +3,4 @@ defmodule BalalaikaBear.Board do
                                methods: ["addTopic", "closeTopic", "createComment", "deleteComment", 
                                          "deleteTopic", "editComment", "editTopic", "fixTopic", "getComments",
                                          "getTopics", "openTopic", "restoreComment", "unfixTopic"]
-  @moduledoc false
 end

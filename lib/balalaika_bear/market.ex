@@ -5,5 +5,4 @@ defmodule BalalaikaBear.Market do
                                          "get", "getAlbumById", "getAlbums", "getById", "getCategories",
                                          "getComments", "removeFromAlbum", "reorderAlbums", "reorderItems",
                                          "report", "reportComment", "restore", "restoreComment", "search"]
-  @moduledoc false
 end

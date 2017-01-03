@@ -5,5 +5,4 @@ defmodule BalalaikaBear.Account do
                                          "getProfileInfo", "getPushSettings", "lookupContacts", "registerDevice",
                                          "saveProfileInfo", "setInfo", "setNameInMenu", "setOffline", "setOnline",
                                          "setPushSettings", "setSilenceMode", "unbanUser", "unregisterDevice"]
-  @moduledoc false
 end

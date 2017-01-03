@@ -9,5 +9,4 @@ defmodule BalalaikaBear.Photos do
                                          "putTag", "removeTag", "reorderAlbums", "reorderPhotos", "report", "reportComment", "restore",
                                          "restoreComment", "save", "saveMarketAlbumPhoto", "saveMarketPhoto", "saveMessagesPhoto",
                                          "saveOwnerPhoto", "saveWallPhoto", "search"]
-  @moduledoc false
 end

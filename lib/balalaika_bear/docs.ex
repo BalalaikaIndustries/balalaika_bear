@@ -3,5 +3,4 @@ defmodule BalalaikaBear.Docs do
                                methods: ["add", "delete", "edit", "get", "getById",
                                          "getTypes", "getUploadServer", "getWallUploadServer",
                                          "save", "search"]
-  @moduledoc false
 end

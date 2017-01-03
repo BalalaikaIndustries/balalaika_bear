@@ -4,5 +4,4 @@ defmodule BalalaikaBear.Friends do
                                          "deleteList", "edit", "editList", "get", "getAppUsers", "getAvailableForCall",
                                          "getByPhones", "getLists", "getMutual", "getOnline", "getRecent", "getRequests",
                                          "getSuggestions", "search"]
-  @moduledoc false
 end

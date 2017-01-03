@@ -5,5 +5,4 @@ defmodule BalalaikaBear.Audio do
                                          "getById", "getCount", "getLyrics", "getPopular", 
                                          "getRecommendations", "getUploadServer", "moveToAlbum",
                                          "reorder", "reorder", "save", "search", "setBroadcast"]
-  @moduledoc false
 end

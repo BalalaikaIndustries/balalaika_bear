@@ -20,6 +20,14 @@ defmodule BalalaikaBear.Mixfile do
     [applications: [:logger, :httpoison]]
   end
 
+  def package do
+   [
+     maintainers: ["Ayrat Badykov"],
+     licenses: ["MIT"],
+     links: %{"GitHub" => "https://github.com/ayrat555/balalaika_bear"}
+   ]
+  end
+
   defp deps do
     [
       {:httpoison, "~> 0.10.0"},
