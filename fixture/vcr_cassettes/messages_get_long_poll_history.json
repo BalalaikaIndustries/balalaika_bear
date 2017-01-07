@@ -1,0 +1,27 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": [],
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://imv4.vk.com/im6710?ts=1840829772&key=028491ad2e8a95b44190b71ca5d6e6d9ed207ff4&act=a_check"
+    },
+    "response": {
+      "body": "{\"ts\":1840829791,\"updates\":[[8,-31308630,0],[9,-40546021,1],[8,-97004807,0],[8,-43800538,0],[8,-20342602,0],[8,-40546021,0],[9,-31110464,1],[9,-19467109,0],[9,-15733285,1],[9,-24965682,1],[9,-92342898,1],[9,-84629362,1],[9,-60572844,1],[8,-26474029,0],[8,-15733285,0],[8,-19467109,0],[8,-17126870,0],[8,-31110464,0],[9,-3969963,1]]}\r\n",
+      "headers": {
+        "Server": "Apache",
+        "Date": "Sat, 07 Jan 2017 19:39:37 GMT",
+        "Content-Type": "text/javascript; charset=UTF-8",
+        "Content-Length": "334",
+        "Connection": "keep-alive",
+        "Pragma": "no-cache",
+        "Cache-Control": "no-store",
+        "Access-Control-Allow-Methods": "GET"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

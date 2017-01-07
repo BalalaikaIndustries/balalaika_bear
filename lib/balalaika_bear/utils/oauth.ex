@@ -1,4 +1,4 @@
-defmodule BalalaikaBear.Utils.OAuth do
+  defmodule BalalaikaBear.Utils.OAuth do
   alias BalalaikaBear.Utils.Config
   alias BalalaikaBear.Request.HTTPClient
   alias BalalaikaBear.Request.Params
@@ -19,7 +19,7 @@ defmodule BalalaikaBear.Utils.OAuth do
   end
 
   defp auth_request_url(path, params) do
-    @base_auth_url <> "#{path}?" <> Params.url_params(default_auth_params, params)
+    @base_auth_url <> "#{path}?" <> Params.url_params(params, default_auth_params)
   end
 
   defp default_auth_params do

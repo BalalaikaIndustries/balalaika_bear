@@ -11,4 +11,17 @@ defmodule BalalaikaBear.MessagesTest do
       {:ok, _result} = BalalaikaBear.Messages.get(params)
     end
   end
+
+  test "gets long poll history" do
+    use_cassette "messages_get_long_poll_history" do
+      server = "imv4.vk.com/im6710"
+      ts = 1840829772
+      key = "028491ad2e8a95b44190b71ca5d6e6d9ed207ff4"
+      {:ok, result} = BalalaikaBear.Messages.get_long_poll_history(server, key, ts)
+      %{
+        "updates" => _,
+        "ts" => _
+      } = result
+    end
+  end
 end
