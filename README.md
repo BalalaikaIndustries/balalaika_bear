@@ -1,5 +1,6 @@
 ![](http://i.imgur.com/Sdc5a5O.png)
 # BalalaikaBear
+[![Build Status](https://semaphoreci.com/api/v1/ayrat555/balalaika_bear/branches/master/badge.svg)](https://semaphoreci.com/ayrat555/balalaika_bear)
 
 BalalaikaBear - simple elixir wrapper for VK API
 
