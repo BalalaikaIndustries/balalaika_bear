@@ -10,7 +10,7 @@ Add `balalaika_bear` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
-  [{:balalaika_bear, "~> 0.1.0"}]
+  [{:balalaika_bear, "~> 0.1.1"}]
 end
 ```
 ## Usage
