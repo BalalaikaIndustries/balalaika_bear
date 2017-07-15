@@ -1,4 +1,3 @@
 defmodule BalalaikaBear.Stats do
-  use BalalaikaBear.Macro.API, namespace: "stats",
-                               methods: ["get", "getPostReach", "trackVisitor"]
+  use BalalaikaBear.Macro.API, namespace: "stats"
 end

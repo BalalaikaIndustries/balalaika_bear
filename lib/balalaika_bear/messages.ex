@@ -1,12 +1,5 @@
 defmodule BalalaikaBear.Messages do
-  use BalalaikaBear.Macro.API, namespace: "messages", 
-                               methods: ["addChatUser", "allowMessagesFromGroup", "createChat", "delete",
-                                         "deleteChatPhoto", "deleteDialog", "denyMessagesFromGroup", "editChat",
-                                         "get", "getById", "getChat", "getChatUsers", "getDialogs", "getHistory",
-                                         "getHistoryAttachments", "getLastActivity", 
-                                         "getLongPollServer", "isMessagesFromGroupAllowed", "markAsAnsweredDialog", 
-                                         "markAsImportant", "markAsImportantDialog", "markAsRead", "removeChatUser", 
-                                         "restore", "search", "searchDialogs", "send", "setActivity", "setChatPhoto"]
+  use BalalaikaBear.Macro.API, namespace: "messages"
   alias BalalaikaBear.Request.HTTPClient
   alias BalalaikaBear.Request.Params
 
@@ -15,5 +8,5 @@ defmodule BalalaikaBear.Messages do
     url = "https://#{server}?" <> Params.url_params(params)
 
     HTTPClient.request(:get, url)
-  end 
+  end
 end

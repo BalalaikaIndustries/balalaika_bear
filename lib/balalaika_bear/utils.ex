@@ -1,4 +1,3 @@
 defmodule BalalaikaBear.Utils do
-  use BalalaikaBear.Macro.API, namespace: "utils",
-                               methods: ["checkLink", "getServerTime", "resolveScreenName"]
+  use BalalaikaBear.Macro.API, namespace: "utils"
 end

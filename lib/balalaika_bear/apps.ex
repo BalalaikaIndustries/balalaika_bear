@@ -1,5 +1,4 @@
 defmodule BalalaikaBear.Apps do
-  use BalalaikaBear.Macro.API, namespace: "apps",
-                               methods: ["deleteAppRequests", "get", "getCatalog", "getFriendsList", 
-                                         "getFriendsList", "getScore", "sendRequest"]
-end 
+  use BalalaikaBear.Macro.API, namespace: "apps"
+end
+

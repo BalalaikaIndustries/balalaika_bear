@@ -1,5 +1,3 @@
 defmodule BalalaikaBear.Users do
-  use BalalaikaBear.Macro.API, namespace: "users",
-                               methods: ["get", "getNearby", "getSubscriptions", 
-                                         "isAppUser", "report", "search", "getFollowers"]
+  use BalalaikaBear.Macro.API, namespace: "users"
 end

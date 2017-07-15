@@ -19,7 +19,8 @@
   end
 
   defp auth_request_url(path, params) do
-    @base_auth_url <> "#{path}?" <> Params.url_params(params, default_auth_params)
+    @base_auth_url <> "#{path}?"
+      <> Params.url_params(params, default_auth_params)
   end
 
   defp default_auth_params do
