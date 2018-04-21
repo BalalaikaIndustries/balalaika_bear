@@ -10,9 +10,9 @@ defmodule BalalaikaBear.Utils.OAuthTest do
       app_id: fn -> "555" end,
       code_redirect_uri: fn -> "http://example.com/callback" end
     ] do
-      generated_url = OAuth.auth_url(params)
+      generated_url = OAuth.auth_url(params())
 
-      assert generated_url == correct_url
+      assert generated_url == correct_url()
     end
   end
 
