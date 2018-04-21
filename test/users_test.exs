@@ -4,21 +4,21 @@ defmodule BalalaikaBear.UsersTest do
 
   test "retrieves user info" do
     use_cassette "users_get" do
-      params = 
-        %{ 
+      params =
+        %{
           user_ids: [13886710],
-          fields: ["photo_max", "sex"], 
+          fields: ["photo_max", "sex"],
           name_case: "ins"
         }
 
       {:ok, result} = BalalaikaBear.Users.get(params)
       user = List.first result
       %{
-        "first_name" => "Айратом", 
+        "first_name" => "Айратом",
         "hidden" => 1,
         "last_name" => "Бадыковым",
         "photo_max" => "https://pp.vk.me/c837131/v837131710/1240d/roPlCfnhZf4.jpg",
-        "sex" => 2, 
+        "sex" => 2,
         "uid" => 13886710
       } = user
     end
@@ -65,7 +65,7 @@ defmodule BalalaikaBear.UsersTest do
 
   test "gets user's subscriptions" do
     use_cassette "users_get_subscriptions" do
-      params = %{ user_id: 13886710 }
+      params = %{user_id: 13886710}
 
       {:ok, result} = BalalaikaBear.Users.get_subscriptions(params)
       %{
