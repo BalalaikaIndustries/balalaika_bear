@@ -2,7 +2,7 @@ jobs:
   build:
     working_directory: ~/balalaika_bear
     docker:
-      - image: elixir:latest
+      - image: elixir:1.6.4
 
     steps:
       - checkout
