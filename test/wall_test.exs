@@ -4,7 +4,7 @@ defmodule BalalaikaBear.WallTest do
 
   test "gets wall posts" do
     use_cassette "wall_get" do
-      params = %{owner_id: -86529522}
+      params = %{owner_id: -86_529_522}
 
       {:ok, _result} = BalalaikaBear.Wall.get(params)
     end

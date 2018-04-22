@@ -4,7 +4,7 @@ defmodule BalalaikaBear.Request.Params do
   def url_params(params, default_params \\ %{}) do
     params
     |> Map.merge(default_params)
-    |> Enum.reduce([], fn({key, value}, accum) ->
+    |> Enum.reduce([], fn {key, value}, accum ->
       ["#{key}=#{encode_params(value)}" | accum]
     end)
     |> Enum.join("&")

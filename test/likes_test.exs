@@ -4,12 +4,11 @@ defmodule BalalaikaBear.LikesTest do
 
   test "gets list if likers" do
     use_cassette "likes_get_list" do
-      params = 
-        %{ 
-          type: "photo",
-          owner_id: 13886710,
-          item_id: 456239025
-        }
+      params = %{
+        type: "photo",
+        owner_id: 13_886_710,
+        item_id: 456_239_025
+      }
 
       {:ok, _result} = BalalaikaBear.Likes.get_list(params)
     end

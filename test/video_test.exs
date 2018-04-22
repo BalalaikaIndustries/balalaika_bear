@@ -4,10 +4,10 @@ defmodule BalalaikaBear.VideoTest do
 
   test "gets user's videos" do
     use_cassette "video_get" do
-      params = 
-        %{ 
-          access_token: "50a2d047f568adc3645f8983eab904ab5d33eb856c5c566291fa5a06a01445d7f29d321d521827aac3b88"
-        }
+      params = %{
+        access_token:
+          "50a2d047f568adc3645f8983eab904ab5d33eb856c5c566291fa5a06a01445d7f29d321d521827aac3b88"
+      }
 
       {:ok, _result} = BalalaikaBear.Video.get(params)
     end

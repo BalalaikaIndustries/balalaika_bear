@@ -8,11 +8,8 @@ defmodule BalalaikaBear.Request.HTTPClient do
   end
 
   def request(type, url, headers \\ %{}, body \\ [], options \\ []) do
-    {:ok, %HTTPoison.Response{
-      status_code: code,
-      body: body,
-      headers: headers}} =
-    HTTPoison.request(type, url, body, headers, options)
+    {:ok, %HTTPoison.Response{status_code: code, body: body, headers: headers}} =
+      HTTPoison.request(type, url, body, headers, options)
 
     %{status_code: code, body: body, headers: headers} |> response
   end
@@ -24,18 +21,22 @@ defmodule BalalaikaBear.Request.HTTPClient do
   defp response(%{status_code: code, body: body, headers: _}) do
     case code do
       200 -> parse_result(body)
-        _ -> {:error, Poison.decode! body}
+      _ -> {:error, Poison.decode!(body)}
     end
   end
 
   defp parse_result(body) do
-    body = Poison.decode! body
+    body = Poison.decode!(body)
+
     case body do
       %{"response" => response_map} ->
         {:ok, response_map}
+
       %{"error" => error_map} ->
         {:error, error_map}
-      _ -> {:ok, body}
+
+      _ ->
+        {:ok, body}
     end
   end
 end

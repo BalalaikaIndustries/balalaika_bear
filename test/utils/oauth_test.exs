@@ -6,10 +6,8 @@ defmodule BalalaikaBear.Utils.OAuthTest do
 
   test "generates correct auth url" do
     with_mock BalalaikaBear.Utils.Config,
-    [
       app_id: fn -> "555" end,
-      code_redirect_uri: fn -> "http://example.com/callback" end
-    ] do
+      code_redirect_uri: fn -> "http://example.com/callback" end do
       generated_url = OAuth.auth_url(params())
 
       assert generated_url == correct_url()
@@ -20,6 +18,7 @@ defmodule BalalaikaBear.Utils.OAuthTest do
     use_cassette "access_token_request_with_invalid_token" do
       code = "invalid_code"
       {:error, description} = OAuth.access_token(code)
+
       %{
         "error" => "invalid_grant",
         "error_description" => "Code is invalid or expired."
@@ -30,6 +29,7 @@ defmodule BalalaikaBear.Utils.OAuthTest do
   test "fetches access_token if valid code is provided" do
     use_cassette "access_token_request_with_valid_token" do
       code = "f0eb1cf0c85d6ff5ae"
+
       {
         :ok,
         %{
@@ -52,7 +52,7 @@ defmodule BalalaikaBear.Utils.OAuthTest do
 
   defp correct_url do
     "https://oauth.vk.com/authorize?v=5.60&" <>
-    "scope=friends&response=code&display=page&" <>
-    "redirect_uri=http://example.com/callback&client_id=555"
+      "scope=friends&response=code&display=page&" <>
+      "redirect_uri=http://example.com/callback&client_id=555"
   end
 end
