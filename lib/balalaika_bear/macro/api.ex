@@ -1,7 +1,7 @@
 defmodule BalalaikaBear.Macro.API do
   alias BalalaikaBear.Request.HTTPClient
   @moduledoc false
-  @methods_path "./lib//balalaika_bear/macro/methods.json"
+  @methods_path "./lib/balalaika_bear/macro/methods.json"
 
   defmacro __using__(options) do
     namespace = options[:namespace]
