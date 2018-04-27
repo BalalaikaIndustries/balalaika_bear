@@ -1,5 +1,7 @@
 ![](http://i.imgur.com/Sdc5a5O.png)
 # BalalaikaBear
+
+[![Join the chat at https://gitter.im/balalaika_bear/Lobby](https://badges.gitter.im/balalaika_bear/Lobby.svg)](https://gitter.im/balalaika_bear/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![CircleCI](https://circleci.com/gh/ayrat555/balalaika_bear.svg?style=svg)](https://circleci.com/gh/ayrat555/balalaika_bear)
 
 BalalaikaBear - simple elixir wrapper for VK API
